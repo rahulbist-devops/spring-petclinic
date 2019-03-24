@@ -1,6 +1,7 @@
 pipeline 
 {
 agent any
+      stages{      
 stage('Build'){
 steps {
 sh '''cd spring-petclinic
@@ -8,7 +9,7 @@ sh '''cd spring-petclinic
       java -jar target/*.jar
 '''
 }
-
+}
 }
 
 }
